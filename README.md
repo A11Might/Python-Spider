@@ -13,3 +13,5 @@
 - [快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/QuickSort.java)
 
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/CountingSort.java)
+
+- [归并排序过程解决小和问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/SmallSum.java)
