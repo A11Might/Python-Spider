@@ -78,7 +78,7 @@ public class SmallSum {
         return res;
     }
 
-    //计数器
+    //对数器
     public static int[] generateRandomArray(int maxSize, int maxValue) {
         int[] arr = new int[(int) ((maxSize + 1) * Math.random())];// [0,maxSize]
         for (int i = 0; i < arr.length; i++) {
