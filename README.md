@@ -15,3 +15,5 @@
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/CountingSort.java)
 
 - [归并排序过程解决小和问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/SmallSum.java)
+
+- [荷兰国旗问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/NetherlandsFlag.java)
