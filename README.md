@@ -10,7 +10,7 @@
 
 - [归并排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/MergeSort.java)
 
-- [快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/QuickSort.java)
+- [经典快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/QuickSort.java)
 
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/CountingSort.java)
 
