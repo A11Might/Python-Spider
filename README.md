@@ -1,6 +1,6 @@
 ## Python
 
-- [爬取目标帖子图片](https://github.com/A11Might/Python-Spider/blob/master/TieBa.py)
+- [贴吧爬取目标帖子图片](https://github.com/A11Might/Python-Spider/blob/master/TieBa.py)
 
 - [实现任意关键词搜索睿思种子](https://github.com/A11Might/Python-Spider/blob/master/RuiSi.py)
 
