@@ -33,7 +33,7 @@ import java.util.Arrays;
                 swap(arr, --more, lo);
             }
          }
-         swap(arr, more, hi);
+         swap(arr, more, hi);//将序列最后一个元素加入=区间
          return new int[] {less, more + 1};
      } 
      public static void swap(int[] arr, int i, int j) {
