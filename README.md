@@ -19,3 +19,5 @@
 - [荷兰国旗问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/NetherlandsFlag.java)
 
 - [随机快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/RandomQuickSort.java)
+
+- [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
