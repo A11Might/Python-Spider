@@ -17,3 +17,5 @@
 - [小和问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/SmallSum.java)
 
 - [荷兰国旗问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/NetherlandsFlag.java)
+
+- [随机快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/RandomQuickSort.java)
