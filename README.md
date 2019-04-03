@@ -30,7 +30,7 @@
 
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/CountingSort.java)
 
-#### 堆排序
+#### 堆
 
 - [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/buildHeap.java)
 
