@@ -23,3 +23,5 @@
 - [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
 
 - [堆化数组](https://github.com/A11Might/SomeCodeByMyself/blob/master/buildHeap.java)
+
+- [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
