@@ -1,10 +1,10 @@
-## Python
+# Python
 
 - [贴吧爬取目标帖子图片](https://github.com/A11Might/Python-Spider/blob/master/TieBa.py)
 
 - [实现任意关键词搜索睿思种子](https://github.com/A11Might/Python-Spider/blob/master/RuiSi.py)
 
-## Java
+# Java
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
 
@@ -21,3 +21,5 @@
 - [随机快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/RandomQuickSort.java)
 
 - [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
+
+- [堆化数组](https://github.com/A11Might/SomeCodeByMyself/blob/master/buildHeap.java)
