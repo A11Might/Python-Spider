@@ -32,7 +32,7 @@
 
 #### 堆排序
 
-- [堆化数组](https://github.com/A11Might/SomeCodeByMyself/blob/master/buildHeap.java)
+- [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/buildHeap.java)
 
 - [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
 
