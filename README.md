@@ -6,6 +6,8 @@
 
 # Java
 
+##### 排序
+
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
 
 - [归并排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/MergeSort.java)
