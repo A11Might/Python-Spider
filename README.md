@@ -39,3 +39,5 @@
 #### 栈和队列
 
 - [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
+
+- [使用队列实现栈和使用栈实现队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/StackAndQueueConvert.java)
