@@ -48,7 +48,7 @@ public class StackAndQueueConvert {
             return temp;
         }
 
-        public void swap(Queue a, Queue b) {
+        public void swap(Queue<Integer> a, Queue<Integer> b) {
             Queue<Integer> temp = help;
             help = queue;
             queue = temp;
