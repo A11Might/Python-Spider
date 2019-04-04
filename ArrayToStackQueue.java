@@ -32,7 +32,7 @@ public class ArrayToStackQueue {
             return arr[--size];//栈弹出一个元素后引用向前移一位
         }
 
-        public Integer peak() {
+        public Integer peek() {
             if (size == 0) {
                 return null;
             }
