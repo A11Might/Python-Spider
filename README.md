@@ -26,6 +26,10 @@
 
 - [随机快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/RandomQuickSort.java)
 
+#### 桶排序
+
+- [求相邻两数的最大差值](https://github.com/A11Might/SomeCodeByMyself/blob/master/MaxGap.java)
+
 #### 计数排序
 
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/CountingSort.java)
