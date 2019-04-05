@@ -34,6 +34,8 @@
 
 - [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/BuildHeap.java)
 
+- [快速求中位数](https://github.com/A11Might/SomeCodeByMyself/blob/master/MedianQuick.java)
+
 - [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
 
 #### 栈和队列
