@@ -15,6 +15,8 @@
 
 - [打印两个有序链表公共部分](https://github.com/A11Might/SomePracticeCode/blob/master/PrintCommonPart.java)
 
+- [判断是否是回文链表](https://github.com/A11Might/SomePracticeCode/blob/master/IsPalindromeList.java)
+
 #### 栈和队列
 
 - [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
