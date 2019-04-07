@@ -11,7 +11,9 @@
 
 #### 数组和链表
 
-- [反转链表](https://github.com/A11Might/SomePracticeCode/blob/master/ReverseList.java)
+- [反转单向和双向链表](https://github.com/A11Might/SomePracticeCode/blob/master/ReverseList.java)
+
+- [打印两个有序链表公共部分](https://github.com/A11Might/SomePracticeCode/blob/master/PrintCommonPart.java)
 
 #### 栈和队列
 
