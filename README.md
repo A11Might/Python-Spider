@@ -8,6 +8,27 @@
 
 # Java
 
+
+#### 数组和链表
+
+
+
+#### 栈和队列
+
+- [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
+
+- [使用队列实现栈和使用栈实现队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/StackAndQueueConvert.java)
+
+- [获取栈中最小值](https://github.com/A11Might/SomeCodeByMyself/blob/master/GetMinStack.java)
+
+#### 堆
+
+- [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/BuildHeap.java)
+
+- [快速求中位数](https://github.com/A11Might/SomeCodeByMyself/blob/master/MedianQuick.java)
+
+- [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
+
 #### 基础排序
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
@@ -33,19 +54,3 @@
 #### 计数排序
 
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/CountingSort.java)
-
-#### 堆
-
-- [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/BuildHeap.java)
-
-- [快速求中位数](https://github.com/A11Might/SomeCodeByMyself/blob/master/MedianQuick.java)
-
-- [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/HeapSort.java)
-
-#### 栈和队列
-
-- [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
-
-- [使用队列实现栈和使用栈实现队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/StackAndQueueConvert.java)
-
-- [获取栈中最小值](https://github.com/A11Might/SomeCodeByMyself/blob/master/GetMinStack.java)
