@@ -19,6 +19,8 @@
 
 - [将单向链表按某值划分成左边小、中间相等、右边大的形式](https://github.com/A11Might/SomePracticeCode/blob/master/SmallerEqualBigger.java)
 
+- [复制含有随机指针节点的链表](https://github.com/A11Might/SomePracticeCode/blob/master/CopyListWithRandom.java)
+
 #### 栈和队列
 
 - [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
