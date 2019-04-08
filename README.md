@@ -13,6 +13,8 @@
 
 - [转圈打印矩阵](https://github.com/A11Might/SomePracticeCode/blob/master/PrintMatrixSpiralOrder.java)
 
+- [“之”字形打印矩阵](https://github.com/A11Might/SomePracticeCode/blob/master/ZigZagPrintMatrix.java)
+
 #### 链表
 
 - [反转单向和双向链表](https://github.com/A11Might/SomePracticeCode/blob/master/ReverseList.java)
