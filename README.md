@@ -9,7 +9,11 @@
 # Java
 
 
-#### 数组和链表
+#### 数组
+
+- [转圈打印矩阵](https://github.com/A11Might/SomePracticeCode/blob/master/PrintMatrixSpiralOrder.java)
+
+#### 链表
 
 - [反转单向和双向链表](https://github.com/A11Might/SomePracticeCode/blob/master/ReverseList.java)
 
