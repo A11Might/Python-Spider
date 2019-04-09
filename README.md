@@ -29,6 +29,8 @@
 
 - [寻找两个单链表的交点](https://github.com/A11Might/SomePracticeCode/blob/master/FindFirstIntersectNode.java)
 
+- [合并k个有序链表](https://github.com/A11Might/SomePracticeCode/blob/master/MergeKLists.java)
+
 #### 栈和队列
 
 - [用数组实现栈和队列](https://github.com/A11Might/SomeCodeByMyself/blob/master/ArrayToStackQueue.java)
