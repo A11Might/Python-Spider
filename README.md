@@ -17,6 +17,8 @@
 
 - [“之”字形打印矩阵](https://github.com/A11Might/SomePracticeCode/blob/master/ZigZagPrintMatrix.java)
 
+- [在行列都排好序的矩阵中找数](https://github.com/A11Might/SomePracticeCode/blob/master/FindNumInSortedMatrix.java)
+
 #### 链表
 
 - [反转单向和双向链表](https://github.com/A11Might/SomePracticeCode/blob/master/ReverseList.java)
