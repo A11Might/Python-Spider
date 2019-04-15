@@ -57,6 +57,8 @@
 
 - [实现二叉树的先序、中序、后序遍历](https://github.com/A11Might/SomePracticeCode/blob/master/PreInPosTraversal.java)
 
+- [在二叉树中找到一个节点的后继节点](https://github.com/A11Might/SomePracticeCode/blob/master/SuccessorNode.java)
+
 #### 基础排序
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
