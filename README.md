@@ -61,6 +61,8 @@
 
 - [在二叉树中找到一个节点的前驱节点](https://github.com/A11Might/SomePracticeCode/blob/master/PrecurorNode.java)
 
+- [二叉树的序列化和反序列化](https://github.com/A11Might/SomePracticeCode/blob/master/SerializeAndReconstructTree.java)
+
 #### 基础排序
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
