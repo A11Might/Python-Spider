@@ -53,6 +53,8 @@
 
 #### 二叉树
 
+- [打印二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/PrintTree.java)
+
 - [实现二叉树的先序、中序、后序遍历](https://github.com/A11Might/SomePracticeCode/blob/master/PreInPosTraversal.java)
 
 #### 基础排序
