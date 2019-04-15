@@ -63,6 +63,8 @@
 
 - [二叉树的序列化和反序列化](https://github.com/A11Might/SomePracticeCode/blob/master/SerializeAndReconstructTree.java)
 
+- [求完全二叉树节点个数](https://github.com/A11Might/SomePracticeCode/blob/master/CompleteTreeNodeNumber.java)
+
 #### 基础排序
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
