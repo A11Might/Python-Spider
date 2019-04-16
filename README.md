@@ -69,6 +69,8 @@
 
 - [判断一棵二叉树是否是平衡二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/IsBalancedTree.java)
 
+- [判断一棵树是否是搜索二叉树、 判断一棵树是否是完全二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/IsBSTAndCBT.java)
+
 #### 基础排序
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/Sorts.java)
