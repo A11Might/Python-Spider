@@ -43,6 +43,10 @@
 
 - [获取栈中最小值](https://github.com/A11Might/SomeCodeByMyself/blob/master/GetMinStack.java)
 
+#### 哈希表
+
+- [RandomPool结构](https://github.com/A11Might/SomePracticeCode/blob/master/RandomPool.java)
+
 #### 堆
 
 - [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/BuildHeap.java)
