@@ -49,6 +49,8 @@
 
 #### 并查集
 
+- [实现并查集](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/UnionFind.java)
+
 - [岛问题](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Islands.java)
 
 #### 堆
