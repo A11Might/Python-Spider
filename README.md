@@ -47,6 +47,10 @@
 
 - [RandomPool结构](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/RandomPool.java)
 
+#### 并查集
+
+- [岛问题](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Islands.java)
+
 #### 堆
 
 - [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/BuildHeap.java)
