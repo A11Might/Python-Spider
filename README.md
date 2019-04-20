@@ -43,6 +43,14 @@
 
 - [获取栈中最小值](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/GetMinStack.java)
 
+#### 堆
+
+- [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/BuildHeap.java)
+
+- [求数据流的中位数](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/MedianQuick.java)
+
+- [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/HeapSort.java)
+
 #### 哈希表
 
 - [RandomPool结构](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/RandomPool.java)
@@ -53,13 +61,9 @@
 
 - [岛问题](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Islands.java)
 
-#### 堆
+#### 字符串
 
-- [数组堆化](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/BuildHeap.java)
-
-- [求数据流的中位数](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/MedianQuick.java)
-
-- [堆排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/HeapSort.java)
+- [前缀树](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/TrieTree.java)
 
 #### 二叉树
 
