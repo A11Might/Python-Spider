@@ -110,3 +110,14 @@
 #### 计数排序
 
 - [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/CountingSort.java)
+
+#### 贪心
+
+- [问题一](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/LessMoney.java)
+
+- [问题二](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/IPO.java)
+
+- [问题三](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/LowestLexicography.java)
+
+- [问题四](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/BestArrange.java)
+
