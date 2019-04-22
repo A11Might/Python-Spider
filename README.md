@@ -121,3 +121,20 @@
 
 - [问题四](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/BestArrange.java)
 
+#### 递归和动态规划
+
+- [n!](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Factorial.java)
+
+- [汉诺塔](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Hanoi.java)
+
+- [打印一个字符串的全部子序列， 包括空字符串](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/PrintAllSubsquences.java)
+
+- [打印一个字符串的全部排列](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/PrintAllPermutations.java)
+
+- [母牛问题](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Cow.java)
+
+- [逆序栈](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/ReverseStackUsingRecursive.java)
+
+- [最小的路径和](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/MinPath.java)
+
+- [问题一](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/MoneyProblem.java)
