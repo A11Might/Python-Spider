@@ -127,7 +127,7 @@
 
 - [汉诺塔](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Hanoi.java)
 
-- [打印一个字符串的全部子序列， 包括空字符串](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/PrintAllSubsquences.java)
+- [打印一个字符串的全部子序列](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/PrintAllSubsquences.java)
 
 - [打印一个字符串的全部排列](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/PrintAllPermutations.java)
 
