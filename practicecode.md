@@ -1,14 +1,3 @@
-# Python
-
-#### 爬虫
-
-- [贴吧爬取目标帖子图片](https://github.com/A11Might/Python-Spider/blob/master/learningCode/TieBa.py)
-
-- [实现任意关键词搜索睿思种子](https://github.com/A11Might/Python-Spider/blob/master/learningCode/RuiSi.py)
-
-# Java
-
-
 #### 数组
 
 - [转圈打印矩阵](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/PrintMatrixSpiralOrder.java)
