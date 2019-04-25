@@ -85,6 +85,26 @@
 
 - [判断一棵树是否是搜索二叉树、 判断一棵树是否是完全二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/IsBSTAndCBT.java)
 
+#### 图
+
+- [节点类](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Node.java)
+
+- [边类](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Edge.java)
+
+- [图类](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Graph.java)
+
+- [图](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/GraphGenerator.java)
+
+- [BFS](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/BFS.java)
+
+- [DFS](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/DFS.java)
+
+- [拓扑排序](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/TopologySort.java)
+
+- [Kruskal](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Kruskal.java)
+
+- [Prim](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Prim.java)
+
 #### 基础排序
 
 - [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/Sorts.java)
