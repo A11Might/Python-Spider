@@ -4,6 +4,8 @@
 
 # Java
 
-- [练习](https://github.com/A11Might/SomePracticeCode/blob/master/practicecode.md)
+- [极客时间](https://github.com/A11Might/SomePracticeCode/blob/master/geektime.md)
+
+- [叶神算法课](https://github.com/A11Might/SomePracticeCode/blob/master/practicecode.md)
 
 - [LeetCode](https://github.com/A11Might/SomePracticeCode/blob/master/leetcode.md)
