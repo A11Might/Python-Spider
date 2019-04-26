@@ -94,31 +94,15 @@
 
 - [Prim](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Prim.java)
 
-#### 基础排序
-
-- [冒泡排序、插入排序、选择排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/Sorts.java)
-
-#### 归并排序
-
-- [归并排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/MergeSort.java)
+#### 排序
 
 - [小和问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/SmallSum.java)
-
-#### 快速排序
-
-- [经典快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/QuickSort.java)
 
 - [荷兰国旗问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/NetherlandsFlag.java)
 
 - [随机快速排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/RandomQuickSort.java)
 
-#### 桶排序
-
 - [求相邻两数的最大差值](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/MaxGap.java)
-
-#### 计数排序
-
-- [计数排序](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/CountingSort.java)
 
 #### 贪心
 
