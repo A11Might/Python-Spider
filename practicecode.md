@@ -131,3 +131,5 @@
 - [最小的路径和](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/MinPath.java)
 
 - [问题一](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/MoneyProblem.java)
+
+- [0-1背包问题](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Knapsack.java)
