@@ -56,7 +56,7 @@ package class_8;
      * @return
      */
     public static int process2(int[] weights, int[] values, int i, int alreadyweight, int bag) {
-        if (alreadyweight > bag) {
+        if (alreadyweight > bag) { // 需在i == weight.length前面，如果在后面，会返回0；最后一个商品重量超过背包总重量，可能会被返回
             return Integer.MIN_VALUE; // 若设为0，仍可能为Math.max中的大值，得到错误的答案，所以设为系统最小，把这条路彻底封死
         }
         if (i == weights.length) {
