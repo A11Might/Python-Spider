@@ -8,7 +8,7 @@
 
 - [计数排序](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/CountingSort.java)
 
-#### 贪心策略
+#### 回溯算法
 
 - [八皇后](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Cal8Queens.java)
 
@@ -19,3 +19,5 @@
 #### 动态规划
 
 - [0-1背包问题](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Knapsack.java)
+
+- [双十一凑单](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Double11Advance.java)
