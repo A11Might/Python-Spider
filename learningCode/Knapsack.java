@@ -57,7 +57,7 @@ package class_8;
      */
     public static int process2(int[] weights, int[] values, int i, int alreadyweight, int bag) {
         if (alreadyweight > bag) {
-            return Integer.MIN_VALUE;
+            return Integer.MIN_VALUE; // 若设为0，仍可能为Math.max中的大值，得到错误的答案，所以设为系统最小，把这条路彻底封死
         }
         if (i == weights.length) {
             return 0;
