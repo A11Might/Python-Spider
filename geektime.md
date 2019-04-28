@@ -30,6 +30,6 @@
 
 - [莱温斯坦距离](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/LevenshteinDistance%2Cjava)
 
-- [最长公共子串长度]()
+- [最长公共子串长度](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/LongestCommonSubstringLength%2Cjava)
 
-- [最长上升子序列]()
+- [最长上升子序列](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/LongestIncreaseSubArray%2Cjava)
