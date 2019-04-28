@@ -20,4 +20,16 @@
 
 - [0-1背包问题](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Knapsack.java)
 
+- ["杨辉三角"中最短路径]()
+
 - [双十一凑单](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Double11Advance.java)
+
+- [矩阵中最短路径](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/MinDistBT%2Cjava)
+
+- [找零问题](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/MinCoins.java)
+
+- [莱温斯坦距离](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/LevenshteinDistance%2Cjava)
+
+- [最长公共子串长度]()
+
+- [最长上升子序列]()
