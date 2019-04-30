@@ -33,3 +33,9 @@
 - [最长公共子串长度](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/LongestCommonSubstringLength.java)
 
 - [最长上升子序列](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/LongestIncreaseSubArray.java)
+
+#### 图
+
+- [拓扑排序](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/TopoSort.java)
+
+- [dijkstra](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Dijkstra.java)
