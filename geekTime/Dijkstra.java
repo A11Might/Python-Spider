@@ -1,6 +1,7 @@
 package geektime;
 
 import java.util.HashMap;
+import java.util.LinkedList;
 
 /**
  * Dijkstra算法
@@ -98,14 +99,24 @@ import java.util.HashMap;
         }
     }
 
+    private static void printList(LinkedList<Node> list) {
+         for (Node node : list) {
+             System.out.print(node.value);
+         }
+         System.out.println();
+    }
+
     public static int dijkstra(Node start, Node end, int size) {
          NodeHeap nodeHeap = new NodeHeap(size);
          nodeHeap.addOrUpdateOrIgnore(start, 0);
+         LinkedList<Node> res = new LinkedList<>();
          while (!nodeHeap.isEmpty()) {
              NodeRecord record = nodeHeap.pop();
              Node cur = record.node;
              int distance = record.distance;
+             res.add(cur);
              if (cur == end) { // 到达终点，返回距离即为最短距离
+                 printList(res);
                  return distance;
              }
              for (Edge edge : cur.edges) {
