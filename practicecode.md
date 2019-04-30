@@ -94,6 +94,8 @@
 
 - [Prim](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Prim.java)
 
+- [Dijkstra](https://github.com/A11Might/SomePracticeCode/blob/master/learningCode/Dijkstra.java)
+
 #### 排序
 
 - [小和问题](https://github.com/A11Might/SomeCodeByMyself/blob/master/learningCode/SmallSum.java)
