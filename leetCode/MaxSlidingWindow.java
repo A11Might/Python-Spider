@@ -30,32 +30,3 @@ class Solution {
         return res;
     }
 }
-
-// another way
-class Solution2 {
-    public int[] maxSlidingWindow(int[] nums, int k) {
-        int len = nums.length;
-        if (len == 0)
-            return new int[] {};
-        if (len == 1)
-            return new int[] { nums[0] };
-        int localMax = Integer.MIN_VALUE;
-        int[] result = new int[len - k + 1];
-        for (int i = 0; i < k; i++) {
-            localMax = Math.max(nums[i], localMax);
-        }
-        result[0] = localMax;
-        for (int i = 1; i < len - k + 1; i++) {
-            if (nums[i + k - 1] > localMax) {
-                localMax = nums[i + k - 1];
-            } else if (nums[i - 1] == localMax) {
-                localMax = nums[i];
-                for (int x = i; x < i + k; x++) {
-                    localMax = Math.max(nums[x], localMax);
-                }
-            }
-            result[i] = localMax;
-        }
-        return result;
-    }
-}
