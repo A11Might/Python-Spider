@@ -24,6 +24,6 @@
 
 - [实现求链表的中间结点]()
 
-- [Linked List Cycle (环形链表)]()
+- [Linked List Cycle (环形链表)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java)
 
-- [Merge k Sorted Lists (合并k个排序链表)]()
+- [Merge k Sorted Lists (合并k个排序链表)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergekSortedLists.java)
