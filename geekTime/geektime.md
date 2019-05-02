@@ -39,3 +39,7 @@
 - [拓扑排序](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/TopoSort.java)
 
 - [dijkstra](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/Dijkstra.java)
+
+#### 七天练
+
+- [Day1 数组和链表](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day1.md)
