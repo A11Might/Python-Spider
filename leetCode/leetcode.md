@@ -7,6 +7,7 @@
 | 41 | 缺失的第一个正数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstMissingPositive.java) |
 | 70 | 爬楼梯 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ClimbingStairs.java) |
 | 141 | 环形链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java) |
+| 150 | 逆波兰表达式求值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/EvaluateReversePolishNotatio.java) |
 | 169 | 众数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MajorityElement.java) |
 | 239 | 滑动窗口最大值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java) |
 
