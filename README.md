@@ -1,6 +1,6 @@
 # Python
 
-- [爬虫](https://github.com/A11Might/SomePracticeCode/blob/master/spider.md)
+- [爬虫](https://github.com/A11Might/SomePracticeCode/blob/master/spider/spider.md)
 
 # Java
 
