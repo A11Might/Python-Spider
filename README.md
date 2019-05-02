@@ -4,7 +4,7 @@
 
 # Java
 
-- [极客时间](https://github.com/A11Might/SomePracticeCode/blob/master/geektime.md)
+- [极客时间](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/geektime.md)
 
 - [叶神算法课](https://github.com/A11Might/SomePracticeCode/blob/master/practicecode.md)
 
