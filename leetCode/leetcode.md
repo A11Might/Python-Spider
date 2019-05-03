@@ -6,6 +6,7 @@
 | 20 | 有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidParentheses.java) |
 | 23 | 合并K个排序链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergekSortedLists.java) |
 | 32 | 最长有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LongestValidParentheses.java) |
+| 36 | 有效的数独 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidSudoku.jav) |
 | 41 | 缺失的第一个正数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstMissingPositive.java) |
 | 69 | x的平方根 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MySqurt.java) |
 | 70 | 爬楼梯 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ClimbingStairs.java) |
@@ -16,6 +17,7 @@
 | 150 | 逆波兰表达式求值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/EvaluateReversePolishNotatio.java) |
 | 151 | 翻转字符串里的单词 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseWordsinaString.java) |
 | 169 | 众数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MajorityElement.java) |
+| 200 | 岛屿的个数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/NumberofIslands.java) |
 | 226 | 翻转二叉树 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/InvertBinaryTree.java) |
 | 239 | 滑动窗口最大值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java) |
 | 344 | 反转字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseString.java) |
