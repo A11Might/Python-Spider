@@ -10,6 +10,6 @@
 
 - [实现拓扑排序的K昂你算法、DFS算法]()
 
-- [Number of Islands (岛屿的个数)]()
+- [Number of Islands (岛屿的个数)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/NumberofIslands.java)
 
-- [Valid Sudoku (有效的数独)]()
+- [Valid Sudoku (有效的数独)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidSudoku.java)
