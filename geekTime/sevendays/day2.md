@@ -6,7 +6,7 @@
 
 - [用链表实现一个链式栈]()
 
-- [变成模拟实现一个浏览器的前进、后退功能]()
+- [编程模拟实现一个浏览器的前进、后退功能]()
 
 - [Valid Parentheses (有效的括号)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidParentheses.java)
 
