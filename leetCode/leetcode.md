@@ -6,6 +6,7 @@
 | 23 | 合并K个排序链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergekSortedLists.java) |
 | 32 | 最长有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LongestValidParentheses.java) |
 | 41 | 缺失的第一个正数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstMissingPositive.java) |
+| 69 | x的平方根 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MySqurt.java) |
 | 70 | 爬楼梯 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ClimbingStairs.java) |
 | 141 | 环形链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java) |
 | 150 | 逆波兰表达式求值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/EvaluateReversePolishNotatio.java) |
