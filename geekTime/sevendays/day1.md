@@ -22,7 +22,7 @@
 
 - [实现两个有序的链表合并为一个有序链表]()
 
-- [实现求链表的中间结点]()
+- [求链表的中间结点]()
 
 - [Linked List Cycle (环形链表)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java)
 
