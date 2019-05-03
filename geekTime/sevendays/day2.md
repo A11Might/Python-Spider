@@ -22,7 +22,7 @@
 
 - [实现一个循环队列]()
 
-- [Design Circular Deque (设计一个双端队列)]()
+- [Design Circular Deque (设计一个双端队列)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DesignCircularDeque.java)
 
 - [Sliding Window Maximum (滑动窗口最大值)](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java)
 
