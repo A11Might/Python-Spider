@@ -14,6 +14,6 @@
 
 - [Reverse String (反转字符串)]()
 
-- [Reverse Words in a String (反转字符串里的单词)]()
+- [Reverse Words in a String (翻转字符串里的单词)]()
 
 - [String to Integer (atoi) (字符串转换整数(atoi))]()
