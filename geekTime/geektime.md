@@ -47,3 +47,11 @@
 - [Day2 栈、队列和递归](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day2.md)
 
 - [Day3 排序和二分查找](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day3.md)
+
+- [Day4 散列表和字符串](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day4.md)
+
+- [Day5 二叉树和堆](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day5.md)
+
+- [Day6 图](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day6.md)
+
+- [Day7 贪心、分治、回溯和动态规划](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day7.md)
