@@ -45,3 +45,5 @@
 - [Day1 数组和链表](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day1.md)
 
 - [Day2 栈、队列和递归](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day2.md)
+
+- [Day3 排序和二分查找](https://github.com/A11Might/SomePracticeCode/blob/master/geekTime/sevendays/day3.md)
