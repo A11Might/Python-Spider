@@ -15,7 +15,7 @@
 | 98 | 验证二叉搜索树 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidateBinarySearchTree.java) |
 | 104 | 二叉树的最大深度 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaximumDepthofBinaryTree.java) |
 | 112 | 路径总和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/PathSum.java) |
-| 120 | 三角形最小路径和 | [Java]() |
+| 120 | 三角形最小路径和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/Triangle.java) |
 | 121 | 买卖股票的最佳时机 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BestTimetoBuyandSellStock.java) |
 | 141 | 环形链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java) |
 | 150 | 逆波兰表达式求值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/EvaluateReversePolishNotatio.java) |
