@@ -19,7 +19,7 @@ class Solution {
                     dp[i] = Math.min(dp[i], dp[i - coin] + 1);
                 }
             }
-            // dp[i]仍未初始值，则说明当前总金额不能由零钱构成，置为-1
+            // dp[i]仍未初始值，则说明当前总金额不能由这些零钱构成，置为-1
             if (dp[i] == Integer.MAX_VALUE) {
                 dp[i] = -1;
             }
