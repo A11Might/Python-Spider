@@ -17,7 +17,7 @@ import java.util.Map.Entry;
          HashSet<Node> selectedNodes = new HashSet<>(); // toNode全部更新进入distanceMap的节点
 
          Node minNode = getMinDistanceAndUnselectedNode(distanceMap, selectedNodes);
-         while (minNode != null) {
+         while (minNode != null) { // 当更新完图的全部节点时，minNode为null
              int distance = distanceMap.get(minNode);
              for (Edge edge : minNode.edges) {
                  Node toNode = edge.to;
