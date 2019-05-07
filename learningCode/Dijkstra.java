@@ -72,7 +72,7 @@ import java.util.Map.Entry;
              this.size = 0;
          }
 
-         public void addOrUpdateOrIgnore(Node node, int distance) { // 忽略弹出过的节点
+         public void addOrUpdateOrIgnore(Node node, int distance) {
              if (inHeap(node)) {
                  distanceMap.put(node, Math.min(distanceMap.get(node), distance));
                  insertHeapify(node); // 因为distance的值只能变小，所以只用从当前更新的节点向上堆化(下面的节点一定大于它)
@@ -82,7 +82,7 @@ import java.util.Map.Entry;
                  distanceMap.put(node, distance);
                  nodeIndexMap.put(node, size++);
                  insertHeapify(node); // 堆化的时候会更新nodeIndexMap中的index(swap中)
-             }
+             } // 忽略弹出过的节点
          }
 
          public NodeRecord pop() {
