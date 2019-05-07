@@ -1,5 +1,5 @@
 /**
- * 最长公共子串长度
+ * 最长公共子串长度：允许删除、添加
  */
 
  public class LongestCommonSubstringLength {
@@ -17,8 +17,8 @@
          if (a[indexA] == b[indexB]) {
              return 1 + process(a, b, indexA + 1, indexB + 1);
          } else {
-             return Math.max(process(a, b, indexA + 1, indexB), // 跳过a串中不同的字符(删除a[i]或在b[i]前加上a[i])
-                             process(a, b, indexA, indexB + 1)); // 跳过b串中不同的字符(删除b[i]或在a[i]前加上b[i])
+             return Math.max(process(a, b, indexA + 1, indexB), // 删除a[i]或在b[i]前加上a[i]
+                             process(a, b, indexA, indexB + 1)); // 删除b[i]或在a[i]前加上b[i]
          }
      }
 
