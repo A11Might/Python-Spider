@@ -13,12 +13,16 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        if (head == null || head.next == null) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
             return head;
         }
+        ListNode pre = null;
         ListNode cur = head;
         while (cur != null) {
-            ListNode succ = cur.next; // 防止断链
+            ListNode succ = cur.next;
             cur.next = pre;
             pre = cur;
             cur = succ;
@@ -27,7 +31,10 @@ class Solution {
     }
 
     public ListNode reverseList2(ListNode head) {
-        if (head == null || head.next == null) {
+        if (head == null) {
+            return null;
+        }
+        if (head.next == null) {
             return head;
         }
         return process(head);
