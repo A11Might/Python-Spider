@@ -2,6 +2,9 @@
  * @lc app=leetcode.cn id=206 lang=java
  *
  * [206] 反转链表
+ * 
+ * 迭代：使用三个指针pre、cur和succ
+ * 递归：f(head) = head和head.next交换 + f(head.next)
  */
 /**
  * Definition for singly-linked list.
