@@ -4,6 +4,7 @@ import java.util.Stack;
  * @lc app=leetcode.cn id=32 lang=java
  *
  * [32] 最长有效括号
+ *
  * 遇到左括号下标入栈，遇到右括号出栈并更新最大值
  */
 class Solution {
