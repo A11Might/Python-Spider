@@ -27,10 +27,14 @@
 | 169 | 众数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MajorityElement.java) |
 | 200 | 岛屿的个数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/NumberofIslands.java) |
 | 206 | 反转链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseLinkedList.java) |
+| 225 | 用队列实现栈 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementStackUsingQueues.java) |
 | 226 | 翻转二叉树 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/InvertBinaryTree.java) |
+| 232 | 用栈实现队列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementQueueUsingStacks.java) |
 | 239 | 滑动窗口最大值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java) |
 | 322 | 零钱兑换 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/CionChange.java) |
 | 344 | 反转字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseString.java) |
 | 641 | 设计循环双端队列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DesignCircularDeque.java) |
+| 703 | 数据流中的第K大元素 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/KthLargestElementInAStream.java) |
+| 844 | 比较含退格的字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BackspaceStringCompare.java) |
 
 
