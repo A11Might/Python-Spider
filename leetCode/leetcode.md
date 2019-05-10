@@ -7,6 +7,7 @@
 | 20 | 有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidParentheses.java) |
 | 23 | 合并K个排序链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergekSortedLists.java) |
 | 24 | 两两交换链表中的节点 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/SwapNodesInPairs.java) |
+| 25 | k个一组翻转链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseNodesInGroup.java) |
 | 32 | 最长有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LongestValidParentheses.java) |
 | 36 | 有效的数独 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidSudoku.jav) |
 | 41 | 缺失的第一个正数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstMissingPositive.java) |
