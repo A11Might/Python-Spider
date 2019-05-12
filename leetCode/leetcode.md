@@ -17,7 +17,9 @@
 | 64 | 最小路径和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MinimumPathSum.java) |
 | 69 | x的平方根 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MySqurt.java) |
 | 70 | 爬楼梯 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ClimbingStairs.java) |
+| 88 | 合并两个有序数组 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergeSortedArray.java) |
 | 98 | 验证二叉搜索树 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidateBinarySearchTree.java) |
+| 102 | 二叉树的层次遍历 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BinaryTreeLevelOrderTraversal.java) |
 | 104 | 二叉树的最大深度 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaximumDepthofBinaryTree.java) |
 | 112 | 路径总和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/PathSum.java) |
 | 120 | 三角形最小路径和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/Triangle.java) |
@@ -36,6 +38,7 @@
 | 234 | 回文链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/PalindromeLinkedList.java) |
 | 237 | 删除链表中的节点 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DeleteNodeInALinkedList.java) |
 | 239 | 滑动窗口最大值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java) |
+| 278 | 第一个错误的版本 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstBadVersion.java) |
 | 322 | 零钱兑换 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/CionChange.java) |
 | 344 | 反转字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseString.java) |
 | 641 | 设计循环双端队列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DesignCircularDeque.java) |
