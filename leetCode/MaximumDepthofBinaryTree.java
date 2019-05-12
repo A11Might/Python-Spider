@@ -14,16 +14,9 @@ class Solution {
         if (node == null) {
             return 0;
         }
-        if (node.left == null && node.right == null) {
-            return 1;
-        }
-        if (node.left == null) {
-            return 1 + process(node.right);
-        }
-        if (node.right == null) {
-            return 1 + process(node.left);
-        }
-        return 1 + Math.max(process(node.left), process(node.right));
+        int left = process(node.left);
+        int right = process(node.right);
+        return 1 + Math.max(left, right);
     }
 }
 
