@@ -30,6 +30,21 @@ class Solution {
         }
         return true;
     }
+    
+    public boolean isValidBST(TreeNode root) {
+        return process(root, Long.MIN_VALUE, Long.MAX_VALUE);
+    }
+
+    private boolean process(TreeNode node, long min, long max) {
+        if (node == null) {
+            return true;
+        }
+        if (node.val <= min || node.val >= max) {
+            return false;
+        }
+        return process(node.left, min, node.val) &&
+               process(node.right, node.val, max);
+    }
 }
 
 
