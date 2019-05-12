@@ -1,10 +1,13 @@
 | #  | Title | Solution |
 | :----- | :--------  | :---------: |
 | 1 | 两数之和 | [Java]() |
+| 2 | 两数相加 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/AddTwoNumbers.java) |
 | 8 | 字符串转换整数 (atoi) | [Java]() |
 | 10 | 正则表达式匹配 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/RegularExpressionMatching.java) |
 | 15 | 三数之和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ThreeSum.java) |
+| 19 | 删除链表的倒数第N个节点 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/RemoveNthNodeFromEndOfList.java) |
 | 20 | 有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidParentheses.java) |
+| 21 | 合并两个有序链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergeTwoSortedLists.java) |
 | 23 | 合并K个排序链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergekSortedLists.java) |
 | 24 | 两两交换链表中的节点 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/SwapNodesInPairs.java) |
 | 25 | k个一组翻转链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseNodesInGroup.java) |
@@ -30,6 +33,8 @@
 | 225 | 用队列实现栈 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementStackUsingQueues.java) |
 | 226 | 翻转二叉树 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/InvertBinaryTree.java) |
 | 232 | 用栈实现队列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementQueueUsingStacks.java) |
+| 234 | 回文链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/PalindromeLinkedList.java) |
+| 237 | 删除链表中的节点 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DeleteNodeInALinkedList.java) |
 | 239 | 滑动窗口最大值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java) |
 | 322 | 零钱兑换 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/CionChange.java) |
 | 344 | 反转字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseString.java) |
