@@ -27,12 +27,14 @@
 | 112 | 路径总和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/PathSum.java) |
 | 120 | 三角形最小路径和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/Triangle.java) |
 | 121 | 买卖股票的最佳时机 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BestTimetoBuyandSellStock.java) |
+| 122 | 买卖股票的最佳时机 II | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BestTimeToBuyAndSellStock-ii.java) |
 | 141 | 环形链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java) |
 | 142 | 环形链表 II | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycleII.java) |
 | 150 | 逆波兰表达式求值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/EvaluateReversePolishNotatio.java) |
 | 151 | 翻转字符串里的单词 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseWordsinaString.java) |
 | 152 | 乘积最大子序列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaximumProductSubarray.java) |
 | 169 | 众数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MajorityElement.java) |
+| 189 | 旋转数组 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/RotateArray.java) |
 | 200 | 岛屿的个数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/NumberofIslands.java) |
 | 206 | 反转链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseLinkedList.java) |
 | 225 | 用队列实现栈 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementStackUsingQueues.java) |
