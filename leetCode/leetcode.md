@@ -1,6 +1,7 @@
 | #  | Title | Solution |
 | :----- | :--------  | :---------: |
-| 1 | 两数之和 | [Java]() |
+| 111 | 111 | [Java](111) |
+| 1 | 两数之和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/TwoSum.java) |
 | 2 | 两数相加 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/AddTwoNumbers.java) |
 | 8 | 字符串转换整数 (atoi) | [Java]() |
 | 10 | 正则表达式匹配 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/RegularExpressionMatching.java) |
@@ -15,7 +16,9 @@
 | 32 | 最长有效的括号 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LongestValidParentheses.java) |
 | 36 | 有效的数独 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ValidSudoku.jav) |
 | 41 | 缺失的第一个正数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstMissingPositive.java) |
+| 48 | 旋转图像 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/RotateImage.java) |
 | 64 | 最小路径和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MinimumPathSum.java) |
+| 66 | 加一 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/PlusOne.java) |
 | 69 | x的平方根 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MySqurt.java) |
 | 70 | 爬楼梯 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ClimbingStairs.java) |
 | 88 | 合并两个有序数组 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MergeSortedArray.java) |
@@ -28,6 +31,7 @@
 | 120 | 三角形最小路径和 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/Triangle.java) |
 | 121 | 买卖股票的最佳时机 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BestTimetoBuyandSellStock.java) |
 | 122 | 买卖股票的最佳时机 II | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BestTimeToBuyAndSellStock-ii.java) |
+| 136 | 只出现一次的数字 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/SingleNumber.java) |
 | 141 | 环形链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycle.java) |
 | 142 | 环形链表 II | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/LinkedListCycleII.java) |
 | 150 | 逆波兰表达式求值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/EvaluateReversePolishNotatio.java) |
@@ -37,6 +41,7 @@
 | 189 | 旋转数组 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/RotateArray.java) |
 | 200 | 岛屿的个数 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/NumberofIslands.java) |
 | 206 | 反转链表 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseLinkedList.java) |
+| 217 | 存在重复元素 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ContainsDuplicate.java) |
 | 225 | 用队列实现栈 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementStackUsingQueues.java) |
 | 226 | 翻转二叉树 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/InvertBinaryTree.java) |
 | 232 | 用栈实现队列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ImplementQueueUsingStacks.java) |
@@ -44,8 +49,10 @@
 | 237 | 删除链表中的节点 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DeleteNodeInALinkedList.java) |
 | 239 | 滑动窗口最大值 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MaxSlidingWindow.java) |
 | 278 | 第一个错误的版本 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/FirstBadVersion.java) |
+| 283 | 移动零 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/MoveZeroes.java) |
 | 322 | 零钱兑换 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/CionChange.java) |
 | 344 | 反转字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/ReverseString.java) |
+| 350 | 两个数组的交集 II | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/IntersectionOfTwoArraysII.java) |
 | 641 | 设计循环双端队列 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/DesignCircularDeque.java) |
 | 703 | 数据流中的第K大元素 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/KthLargestElementInAStream.java) |
 | 844 | 比较含退格的字符串 | [Java](https://github.com/A11Might/SomePracticeCode/blob/master/leetCode/BackspaceStringCompare.java) |
