@@ -55,7 +55,7 @@ import java.util.Arrays;
      * @return
      */
     public static int bucket(int num, int len, int min, int max) {
-        return ((num - min) * len) / (max - min);
+        return ((num - min) * len) / (max - min); // [0, len]将len个数分在len + 1个桶中
     }
 
     //对数器
