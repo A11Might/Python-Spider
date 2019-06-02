@@ -8,7 +8,7 @@ import java.util.HashSet;
 
  public class PrintAllPermutations {
      /**
-      * 字符串全排列，含有重复字符串
+      * 字符串全排列，字符串中不含重复字符
       * @param str
       */
      public static void printAllPermutations1(String str) {
@@ -25,11 +25,12 @@ import java.util.HashSet;
          for (int i = index; i < length; ++i) {
              swap(chars, i, index); // 为第index位选择一个字符
              process1(chars, index + 1, length); // 全排剩下的字符
+             swap(chars, i, index); // 还原char数组
          }
      }
 
      /**
-     * 字符串全排列，去除重复字符串
+     * 字符串全排列，字符串中含重复字符
      * 
      * @param str
      */
@@ -49,6 +50,7 @@ import java.util.HashSet;
                  set.add(chars[i]);
                  swap(chars, i, index);
                  process2(chars, index + 1, length);
+                 swap(chars, i, index); // 还原char数组
              }
          }
      }
