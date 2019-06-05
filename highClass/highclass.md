@@ -1,5 +1,5 @@
--[KMP](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/KMP.java)
+- [KMP](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/KMP.java)
 
--[KMP例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/DoubleStr.java)
+- [KMP例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/DoubleStr.java)
 
--[KMP例题2](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ContainSameSubTree.java)
+- [KMP例题2](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ContainSameSubTree.java)
