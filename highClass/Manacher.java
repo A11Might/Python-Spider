@@ -51,7 +51,6 @@ public class Manacher {
 
 	public static void main(String[] args) {
 		String str = "zkabatftabaky";
-		int res = maxLcpsLength(str);
-		System.out.println("res=" + res);
+		System.out.println(maxLcpsLength(str));
 	}
 }
