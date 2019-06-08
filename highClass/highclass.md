@@ -1,4 +1,4 @@
-#### class 1
+## class 1
 
 - [KMP](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/KMP.java)
 
