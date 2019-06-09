@@ -46,7 +46,7 @@ public class ManacherShorestEnd {
 		}
 		char[] add = new char[str.length() - endR + 1]; // n - (endR - 1),为形成回文串，原字符后面应该追加的最少字符
 		for (int i = 0; i < add.length; i++) {
-			add[add.length - 1 - i] = charArr[i * 2 + 1]; // 逆序的加在原字符串末尾；原数组由于预处理过，所以偶数位才为真实字符
+			add[add.length - 1 - i] = charArr[i * 2 + 1]; // 逆序的加在原字符串末尾；原数组由于预处理过，所以奇数位才为真实字符
 		}
 		return str + String.valueOf(add);
 
