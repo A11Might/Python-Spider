@@ -1,5 +1,12 @@
 package day.class01;
 
+/**
+ * 在一个无序数组中，找出前 k 个小的元素
+ * 
+ * 1、用大小为k的大顶堆
+ * 2、使用bfprt找到第 k 小的数，再遍历一遍无序数组找到前 k 个小的元素
+ */
+
 public class BFPRT {
 
     // O(N * logk)
@@ -91,27 +98,30 @@ public class BFPRT {
 		if (begin == end) {
 			return arr[begin];
 		}
-		int pivot = medianOfMedians(arr, begin, end);
-		int[] pivotRange = partition(arr, begin, end, pivot);
+		int pivot = medianOfMedians(arr, begin, end); // n / 10个组的中位数中的中位数
+		int[] pivotRange = partition(arr, begin, end, pivot); // 将arr数组分为小于等于大于时，等于pivot的范围
+		// 命中直接返回
 		if (i >= pivotRange[0] && i <= pivotRange[1]) {
 			return arr[i];
+		// 否则跳至小于部分或大于部分，继续bfprt
 		} else if (i < pivotRange[0]) {
 			return bfprt(arr, begin, pivotRange[0] - 1, i);
 		} else {
 			return bfprt(arr, pivotRange[1] + 1, end, i);
 		}
     }
-    
+	
+	// 找到n / 10个组的中位数中的中位数
 	public static int medianOfMedians(int[] arr, int begin, int end) {
 		int num = end - begin + 1;
-		int offset = num % 5 == 0 ? 0 : 1;
-		int[] mArr = new int[num / 5 + offset];
+		int offset = num % 5 == 0 ? 0 : 1; // 不满5个元素的也成一组
+		int[] mArr = new int[num / 5 + offset]; // 每组的中位数组成的数组
 		for (int i = 0; i < mArr.length; i++) {
-			int beginI = begin + i * 5;
-			int endI = beginI + 4;
-			mArr[i] = getMedian(arr, beginI, Math.min(end, endI));
+			int beginI = begin + i * 5; // 每组的开始位置
+			int endI = beginI + 4; // 每组的结束位置
+			mArr[i] = getMedian(arr, beginI, Math.min(end, endI)); // 获取每一组的中位数
 		}
-		return bfprt(mArr, 0, mArr.length - 1, mArr.length / 2);
+		return bfprt(mArr, 0, mArr.length - 1, mArr.length / 2); // 找到mArr数组的中位数
     }
     
 	public static int[] partition(int[] arr, int begin, int end, int pivotValue) {
@@ -132,14 +142,16 @@ public class BFPRT {
 		range[1] = big - 1;
 		return range;
     }
-    
+	
+	// 获取当前数组中位数
 	public static int getMedian(int[] arr, int begin, int end) {
 		insertionSort(arr, begin, end);
 		int sum = end + begin;
-		int mid = (sum / 2) + (sum % 2);
+		int mid = (sum / 2) + (sum % 2); // 奇数取中位数；偶数取中间位置前面的数为中位数
 		return arr[mid];
     }
-    
+	
+	// 插排
 	public static void insertionSort(int[] arr, int begin, int end) {
 		for (int i = begin + 1; i != end + 1; i++) {
 			for (int j = i; j != begin; j--) {
@@ -157,7 +169,8 @@ public class BFPRT {
 		arr[index1] = arr[index2];
 		arr[index2] = tmp;
     }
-    
+	
+	// for test
 	public static void printArray(int[] arr) {
 		for (int i = 0; i != arr.length; i++) {
 			System.out.print(arr[i] + " ");
