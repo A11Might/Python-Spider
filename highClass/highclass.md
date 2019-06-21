@@ -16,4 +16,4 @@
 
 - [滑动窗口最大值](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/SlidingWindowMaxArray.java)
 
-- [滑动窗口最大值例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/AllLessNumSubArray.java)
+- [滑动窗口例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/AllLessNumSubArray.java)
