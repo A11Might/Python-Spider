@@ -11,3 +11,9 @@
 - [Manacher例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ManacherShorestEnd.java)
 
 - [BFPRT](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/BFPRT.java)
+
+## class 2
+
+- [滑动窗口最大值](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/SlidingWindowMaxArray.java)
+
+- [滑动窗口最大值例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/AllLessNumSubArray.java)
