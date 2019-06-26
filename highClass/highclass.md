@@ -2,13 +2,13 @@
 
 - [KMP](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/KMP.java)
 
-- [KMP例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/DoubleStr.java)
+- [给你一个原始串，只能在其后添加若干字符形成大串，并且要求大串包含两个原始串，同时它们开始位置不同，返回最短的大串](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/DoubleStr.java)
 
-- [KMP例题2](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ContainSameSubTree.java)
+- [给定彼此独立的两棵树头结点分别为 t1 和 t2， 判断 t1 中是否有与 t2 树拓扑结构完全相同的子树](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ContainSameSubTree.java)
 
 - [Manacher](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/Manacher.java)
 
-- [Manacher例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ManacherShorestEnd.java)
+- [给你一个原始串，只能在后面添加字符形成大串，要求形成回文串，返回最短的大串](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/ManacherShorestEnd.java)
 
 - [BFPRT](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/BFPRT.java)
 
@@ -16,7 +16,7 @@
 
 - [滑动窗口最大值](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/SlidingWindowMaxArray.java)
 
-- [滑动窗口例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/AllLessNumSubArray.java)
+- [给定数组arr和整数num，返回共有多少个子数组满足子数组中最大值 - 最小值 <= num](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/AllLessNumSubArray.java)
 
 ## class 3
 
