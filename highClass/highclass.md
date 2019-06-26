@@ -18,4 +18,10 @@
 
 - [滑动窗口例题1](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/AllLessNumSubArray.java)
 
+## class 3
+
 - [Morris遍历](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MorrisTraversal.java)
+
+## class 4
+
+##### [给定一个数组arr，和一个整数num，求在arr中，累加和等于num的最长子数组的长度]()
