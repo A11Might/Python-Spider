@@ -36,4 +36,4 @@
 
 - [给定一个二叉树的头节点，返回最大二叉搜索子树的大小](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/BiggestSubBSTInTree.java)
 
-- [求二叉树上的最远距离](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/BiggestSubBSTInTree.java)
+- [求二叉树上的最远距离](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MaxDistanceInTree.java)
