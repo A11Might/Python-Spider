@@ -28,7 +28,7 @@
 
 - [给定一个数组arr，任意把arr分成很多不相容的子数组，使得分出来的子数组中，异或和为0的子数组最多](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MostEOR.java)
 
----
+## 树型dp
 
 - [二叉树的完全性检验](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsCompleteTree.java)
 
