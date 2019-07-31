@@ -30,9 +30,9 @@
 
 ## 树型dp
 
-- [二叉树的完全性检验](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsCompleteTree.java)
+- [判断二叉树是否是完全二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsCompleteTree.java)
 
-- [判断二叉树是否高度平衡](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsBalancedTree.java)
+- [判断二叉树是否是平衡二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsBalancedTree.java)
 
 - [给定一个二叉树的头节点，返回最大二叉搜索子树的大小](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/BiggestSubBSTInTree.java)
 
