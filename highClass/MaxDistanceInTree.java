@@ -5,7 +5,7 @@ package day.class04.question02;
  *      节点a走到节点b的距离为：a走到b的最短路径上的节点个数
  *      求一个二叉树上最远距离
  * 
- * 思路：树型DP
+ * 思路：树型DP，https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MaxDistanceExplain.java
  *        情况：a、最大距离来自左子树
  *              b、最大距离来自右子树
  *              c、最大距离经过当前节点(左子树的高度 + 1 + 右子树的高度)
