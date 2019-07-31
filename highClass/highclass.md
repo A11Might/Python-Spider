@@ -30,4 +30,4 @@
 
 ---
 
--[判断二叉树是否高度平衡](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsBalancedTree.java)
+- [判断二叉树是否高度平衡](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsBalancedTree.java)
