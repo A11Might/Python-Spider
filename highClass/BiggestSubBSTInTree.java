@@ -16,15 +16,6 @@ package day.class04.question02;
  *          e、向左搜索最大二叉搜索子树的最大值
  *          f、向右搜索最大二叉搜索子树的最小值
  */
-/**
- * Definition for a binary tree node. 
- * public class TreeNode { 
- *     int val; 
- *     TreeNode left; 
- *     TreeNode right; 
- *     TreeNode(int x) { val = x; } }
- */
-
 public class BiggestSubBSTInTree {
 
 	public static class Node {
