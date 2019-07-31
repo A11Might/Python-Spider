@@ -27,3 +27,7 @@
 - [给定一个数组arr，和一个整数num，求在arr中，累加和等于num的最长子数组的长度](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/LongestSumSubArrayLength.java)
 
 - [给定一个数组arr，任意把arr分成很多不相容的子数组，使得分出来的子数组中，异或和为0的子数组最多](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MostEOR.java)
+
+---
+
+-[判断二叉树是否高度平衡](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsBalancedTree.java)
