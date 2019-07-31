@@ -12,16 +12,6 @@ package day.class04.question02;
  *      a、左子树是否平衡及其高度
  *      b、右子树是否平衡及其高度
  */
-/**
- * Definition for a binary tree node.
- * public class TreeNode {
- *     int val;
- *     TreeNode left;
- *     TreeNode right;
- *     TreeNode(int x) { val = x; }
- * }
- */
-
 public class IsBalancedTree {
 
 	public static class Node {
