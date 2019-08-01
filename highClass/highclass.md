@@ -37,3 +37,5 @@
 - [给定一个二叉树的头节点，返回最大二叉搜索子树的大小](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/BiggestSubBSTInTree.java)
 
 - [求二叉树上的最远距离](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MaxDistanceInTree.java)
+
+- [一个公司的上下节关系是一个多叉树，这个公司要举办晚会，你作为组织者已经摸清了大家的心理，一个员工的直接上级如果到场，这个员工肯定不会来，每个员工都有一个活跃度的值，决定谁来你会给这个员工发邀请函，怎么让舞会的气氛最活跃？返回最大活跃值](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MaxHappy.java)
