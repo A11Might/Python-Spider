@@ -9,8 +9,8 @@ package day.class04.question02;
  *        情况：a、最大距离来自左子树
  *              b、最大距离来自右子树
  *              c、最大距离经过当前节点(左子树的高度 + 1 + 右子树的高度)
- *        信息：a、当前输的最大距离
- *              b、当前数的高度
+ *        信息：a、当前树的最大距离
+ *              b、当前树的高度
  */
 
 public class MaxDistanceInTree {
