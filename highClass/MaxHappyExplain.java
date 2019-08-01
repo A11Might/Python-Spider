@@ -30,8 +30,8 @@ public class MaxHappyExplain {
         int curPresentHappy = node.happy; // 当前节点来
         for (Node cur : node.nexts) {
             ReturnData nextData = process(cur);
-            curAbsentHappy += Math.max(nextData.absentHappy, nextData.presentHappy);
-            curPresentHappy += nextData.absentHappy;
+            curAbsentHappy += Math.max(nextData.absentHappy, nextData.presentHappy); // 当前节点不出席，则其直接下级可以出席也可以不出席，选取活跃值较大的
+            curPresentHappy += nextData.absentHappy; // 当前节点出席，则其直接下级一定不出席
         }
         // 第二步将黑盒实现
         return new ReturnData(curAbsentHappy, curPresentHappy);
