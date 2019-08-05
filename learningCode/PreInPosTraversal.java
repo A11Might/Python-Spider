@@ -96,13 +96,16 @@ import java.util.Stack;
      //用两个栈实现后序遍历（改造先序遍历）
      public static void posOrderUnRecur1(Node head) {
          if (head != null) {
-             Stack<Node> stack = new Stack<>();//中右左
-             Stack<Node> help = new Stack<>();//左右中
+             Stack<Node> stack = new Stack<>(); //弹出顺序中右左
+             Stack<Node> help = new Stack<>(); //弹出顺序左右中
              stack.push(head);
              Node cur = null;
              while (!stack.isEmpty()) {
                  cur = stack.pop();
                  help.push(cur);
+                 /**
+                 * 栈中先压左，再压右，弹出顺序为先右后左
+                 */
                  if (cur.left != null) {
                      stack.push(cur.left);
                  }
@@ -123,7 +126,7 @@ import java.util.Stack;
              Stack<Node> stack = new Stack<>();
              stack.push(head);
              Node cur = null;
-             Node visited = head;//初始化为第一个节点；若初始化为null，则会漏打节点
+             Node visited = head; //用visited标记打印过的最后一个节点，初始化为第一个节点；若初始化为null，则会漏打节点
              while (!stack.isEmpty()) {
                  cur = stack.peek();
                  if (cur.left != null && cur.left != visited && cur.right != visited) {
