@@ -54,6 +54,7 @@ public class SmallSum {
             return 0;
         }
         int mid = ((hi - lo) >> 1) + lo;
+        // 左边部分产生的小和 + 右边部分产生的小和 + 左右两部分合并产生的小和
         return internally(arr, lo, mid) + internally(arr, mid + 1, hi) + merge(arr, lo, mid, hi);
     }
     public static int merge(int[] arr, int lo,int mid, int hi) {
