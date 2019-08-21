@@ -10,3 +10,4 @@
 
 - [2018左神高级](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/highclass.md)
 
+- [通用算法](https://github.com/A11Might/SomePracticeCode/blob/master/util/util.md)
