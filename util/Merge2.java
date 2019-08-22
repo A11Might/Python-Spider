@@ -1,3 +1,7 @@
+/**
+ * 归并排序，初代merge算法
+ */
+
 public static void merge2(int[] arr, int lo, int mid, int hi) {
         // prepartcopy is original array's previous part copy([lo, mid])
         int[] prePartCopy = new int[mid - lo + 1];
