@@ -28,6 +28,8 @@
 
 - [给定一个数组arr，任意把arr分成很多不相容的子数组，使得分出来的子数组中，异或和为0的子数组最多](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/MostEOR.java)
 
+- [给定一个字符串str表示一个公式，公式里可能有整数、加减乘除符号和左右括号，返回公式的计算结果](./GetValue.java)
+
 ## 树型dp
 
 - [判断二叉树是否是完全二叉树](https://github.com/A11Might/SomePracticeCode/blob/master/highClass/IsCompleteTree.java)
