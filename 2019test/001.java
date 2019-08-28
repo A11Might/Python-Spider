@@ -40,7 +40,8 @@ public class Main {
         int max = 0;
         for (int i = 0; i < keys.length; i++) {
             max = Math.max(max, map.get(keys[i]));
-            map.put(keys[i], max);
+            // 当前可以获得的最大报酬 = max(难度低于当前难度时可以获得的最大报酬， 当前难度可以获得得报酬)
+            map.put(keys[i], max); 
         }
         for (int i = 0; i < friends.length; i++) {
             System.out.println(map.get(friends[i]));
