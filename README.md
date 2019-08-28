@@ -11,3 +11,7 @@
 - [2018左神高级](./highClass/highclass.md)
 
 - [通用算法](./util/util.md)
+
+# 笔试题
+
+- [2019校招真题](./2019test/2019.md)
