@@ -1,7 +1,7 @@
 #### 排序
 
-- [插入排序](https://github.com/A11Might/SomePracticeCode/blob/master/util/InsertSort.java)
+- [插入排序](./InsertSort.java)
 
-- [归并排序](https://github.com/A11Might/SomePracticeCode/blob/master/util/MergeSort.java)
+- [归并排序](./MergeSort.java)
 
-- [快速排序](https://github.com/A11Might/SomePracticeCode/blob/master/util/QuickSort.java)
+- [快速排序](./QuickSort.java)
