@@ -6,7 +6,7 @@ package day.class05;
  * 一个数组的异或和为，数组中所有的数异或起来的结果
  */
 
-public class MaxXOR {
+public class MaxEOR {
     /**
      * 暴力求解，时间复杂度O(n ^ 3)
      * @param arr
