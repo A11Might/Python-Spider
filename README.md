@@ -1,7 +1,3 @@
-# Python
-
-- [爬虫](spider/spider.md)
-
 # Java
 
 - [极客时间](geekTime/geektime.md)
@@ -14,8 +10,8 @@
 
 - [通用算法](util/util.md)
 
-- [爬虫](spider/JavaSpider.md)
+# 爬虫
 
-## 笔试题
+- [Python](spider/spider.md)
 
-- [2019校招真题](2019test/2019.md)
+- [Java](spider/javaspider.md)

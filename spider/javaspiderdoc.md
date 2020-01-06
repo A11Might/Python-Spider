@@ -6,15 +6,16 @@
     - [连接池](#连接池)
     - [请求参数](#请求参数)
 - [Jsoup](#Jsoup)
-    - [解析HTML](#从一个URL,-文件或者字符串中解析HTML)
-    - [获取元素和数据](#使用DOM或者CSS选择器来查找,-取出数据)
+    - [解析HTML](#从一个URL-文件或者字符串中解析HTML)
+    - [获取元素和数据](#使用DOM或者CSS选择器来查找-取出数据)
 - [WebMagic](#WebMagic)
     - [抽取元素API](#抽取元素API)
     - [获取结果API](#获取结果API)
     - [获取链接](#获取链接)
     - [使用Pipeline保存结果](#使用Pipeline保存结果)
-    - [爬虫的配置, 启动和终止](#爬虫的配置,-启动和终止)
-- [slf4j配置](#slf4j(SLF4J-LOG4J-12-Binding))
+    - [爬虫的配置, 启动和终止](#爬虫的配置-启动和终止)
+    - [Scheduler组件](#Scheduler组件)
+- [slf4j配置](#slf4j)
 
 
 ## HttpClient
@@ -35,7 +36,9 @@ try {
 
     // 解析响应
     if (response.getStatusLine().getStatusCode() == 200) {
-        String content = EntityUtils.toString(response.getEntity(), "utf8");
+        String content = EntityUtils.toString(response.getEntity(), "utf8"); // 解析html
+        OutputStream os = new FileOutputStream(new File("c:\\path"));
+        response.getEntity().writeTo(os); // 下载图片
         System.out.println(content.length());
     }
 
@@ -153,7 +156,7 @@ try {
 
 HTML解析器, 可直接解析某个URL地址, HTML文本内容
 
-- #### 从一个URL, 文件或者字符串中解析HTML
+- #### 从一个URL 文件或者字符串中解析HTML
 
     - 从URL中解析HTML
 
@@ -179,7 +182,7 @@ HTML解析器, 可直接解析某个URL地址, HTML文本内容
         Document document = Jsoup.parse(new File("path"), "utf8");
         ```
 
-- #### 使用DOM或者CSS选择器来查找, 取出数据
+- #### 使用DOM或者CSS选择器来查找 取出数据
 
     - 获取元素
     
@@ -252,6 +255,8 @@ public class JobProcessor implements PageProcessor {
 
     // 解析页面
     public void process(Page page) {
+        // 得到page解析的地址
+        page.getUrl()
         // 获取链接
         page.addTargetRequests(page.getHtml().links()
                 // 所有符合https://www.jd.com/news.\\w+?.*正则表达式的url地址
@@ -286,7 +291,7 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
 
 - #### 抽取元素API
 
-    抽取API返回的都是一个Selectable接口, 支持链式调用的
+    抽取API返回的都是一个Selectable接口, 支持链式调用的. 该接口实现Selectable.nodes()用于获取包含所有抽取的Selectable元素的列表, 可以使用get()方法选取第几个Selectable元素
 
      - XPath
 
@@ -298,8 +303,8 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
     - CSS选择器
 
         ```java
-        // div.mt>h1表示class为mt的div标签下的直接子元素h1标签
-        page.getHtml().css("div.mt>h1").toString();
+        // div.mt>h1表示class为mt的div标签下的直接子元素h1标签中的内容
+        page.getHtml().css("div.mt>h1", "text").toString(); // (css选择器, 需要获取属性的属性名)
         // 可是使用:nth-child(n)选择第几个元素, 如下选择第一个元素
         // 注意：需要使用>, 就是直接子元素才可以选择第几个元素
         page.getHtml().css("div#news_div > ul > li:nth-child(1) a").toString();
@@ -358,7 +363,7 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
     }
     ```
 
-- #### 爬虫的配置, 启动和终止
+- #### 爬虫的配置 启动和终止
 
     - Spider
 
@@ -404,7 +409,58 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
         |addHeader(String,String)|添加一条addHeader|site.addHeader("Referer","https://github.com")|
         |setHttpProxy(HttpHost)|设置Http代理|site.setHttpProxy(new HttpHost("127.0.0.1",8080))|
 
-## slf4j(SLF4J LOG4J 12 Binding)
+- #### Scheduler组件
+
+    - 对待抓取的URL队列进行管理
+
+        如下为WebMagic内置的Scheduler: 
+
+        |类|说明|备注|
+        |---|---|---|
+        |DuplicateRemovedScheduler|抽象基类, 提供一些模板方法|继承它可以实现自己的功能|
+        |QueueScheduler|使用内存队列保存待抓取URL||
+        |PriorityScheduler|使用带有优先级的内存队列保存待抓取URL|耗费内存较QueueScheduler更大, 但是当设置了request.priority之后, 只能使用PriorityScheduler才可使优先级生效|
+        |FileCacheQueueScheduler|使用文件保存抓取URL, 可以在关闭程序并下次启动时, 从之前抓取到的URL继续抓取|需指定路径，会建立.urls.txt和.cursor.txt两个文件|
+        |RedisScheduler|使用Redis保存抓取队列, 可进行多台机器同时合作抓取|需要安装并启动redis|
+
+    - 对已抓取的URL进行去重
+
+        去重部分被单独抽象成了一个接口: DuplicateRemover. 如下为WebMagic提供两种去重方式: 
+
+        |类|说明|
+        |---|---|
+        |HashSetDuplicateRemover|使用HashSet来进行去重，占用内存较大|
+        |BloomFilterDuplicateRemover|使用BloomFilter来进行去重，占用内存较小，但是可能漏抓页面|
+
+        RedisScheduler是使用Redis的set进行去重, 其他的Scheduler默认都使用HashSetDuplicateRemover来进行去重
+
+        注: 如果要使用BloomFilter, 必须要加入以下依赖: 
+        ```xml
+        <!--WebMagic对布隆过滤器的支持-->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>16.0</version>
+        </dependency>
+        ```
+
+        修改代码，添加布隆过滤器
+        ```java
+        public static void main(String[] args) {
+            Spider.create(new JobProcessor())
+                    //初始访问url地址
+                    .addUrl("https://www.jd.com/moreSubject.aspx")
+                    .addPipeline(new FilePipeline("D:/webmagic/"))
+                    .setScheduler(new QueueScheduler()
+                            .setDuplicateRemover(new BloomFilterDuplicateRemover(10000000))) //参数设置需要对多少条数据去重
+                    .thread(1)//设置线程数
+                    .run();
+        }
+        ```
+
+## slf4j
+
+log4j.properties
 
 ```properties
 log4j.rootLogger=DEBUG,A1
