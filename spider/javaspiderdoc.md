@@ -227,6 +227,9 @@ HTML解析器, 可直接解析某个URL地址, HTML文本内容
             // parent > child: 查找某个父元素下的所有直接子元素
             // parent > *: 查找某个父元素下所有的所有直接子元素
             element = document.select(".classValue tag").first();
+            // 可是使用:nth-child(n)选择第几个元素, 如下选择第一个元素
+            // 注意：需要使用>, 就是直接子元素才可以选择第几个元素
+            page.getHtml().css("div#news_div > ul > li:nth-child(1) a").toString();
             ```
 
     - 从元素中获取数据
@@ -304,10 +307,8 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
 
         ```java
         // div.mt>h1表示class为mt的div标签下的直接子元素h1标签中的内容
+        // 不同于Jsoup的.select("div.mt>h1").text()方法取所有标签中的内容, .css("div.mt>h1", "text")只取最中间标签中的内容
         page.getHtml().css("div.mt>h1", "text").toString(); // (css选择器, 需要获取属性的属性名)
-        // 可是使用:nth-child(n)选择第几个元素, 如下选择第一个元素
-        // 注意：需要使用>, 就是直接子元素才可以选择第几个元素
-        page.getHtml().css("div#news_div > ul > li:nth-child(1) a").toString();
         ```
 
     - 正则表达式
@@ -351,17 +352,46 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
 
 - #### 使用Pipeline保存结果
 
-    默认使用 `ConsolePipeline` 这个内置的Pipeline来在控制台输出结果, 若想要把结果用保存到文件中, 只需将Pipeline的实现换成 `FilePipeline` 即可, 也可以自己实现Pipeline接口, 自定义输出方式
+    - 已有的Pipeline
 
-    ```java
-    public static void main(String[] args) {
-        Spider.create(new JobProcessor())
-                // 初始访问url地址
-                .addUrl("https://www.jd.com/moreSubject.aspx")
-                .addPipeline(new FilePipeline("D:/webmagic/"))
-                .run();
-    }
-    ```
+        |类|说明|备注|
+        |---|---|---|
+        |ConsolePipeline|输出结果到控制台|抽取结果需要实现toString方法|
+        |FilePipeline|保存结果到文件|抽取结果需要实现toString方法|
+        |JsonFilePipeline|JSON格式保存结果到文件|	
+        |ConsolePageModelPipeline|(注解模式)输出结果到控制台|
+        |FilePageModelPipeline|(注解模式)保存结果到文件	|
+        |JsonFilePageModelPipeline|(注解模式)JSON格式保存结果到文件|想持久化的字段需要有getter方法|
+
+
+    - 默认使用 `ConsolePipeline` 这个内置的Pipeline来在控制台输出结果, 若想要把结果用保存到文件中, 只需将Pipeline的实现换成 `FilePipeline` 即可
+
+        ```java
+        public static void main(String[] args) {
+            Spider.create(new JobProcessor())
+                    // 初始访问url地址
+                    .addUrl("https://www.jd.com/moreSubject.aspx")
+                    .addPipeline(new FilePipeline("D:/webmagic/"))
+                    .run();
+        }
+        ```
+
+    - 也可以自己实现Pipeline接口m, 自定义输出方式, Pipeline的接口定义如下: 
+
+        ```java
+        public interface Pipeline {
+            // ResultItems保存了抽取结果，它是一个Map结构，
+            // 在page.putField(key,value)中保存的数据，
+            //可以通过ResultItems.get(key)获取
+            public void process(ResultItems resultItems, Task task);
+        }
+        ```
+
+    - 一个Spider可以有多个Pipeline, 使用Spider.addPipeline()即可增加一个Pipeline. 这些Pipeline都会得到处理
+
+        ```java
+        spider.addPipeline(new ConsolePipeline()).addPipeline(new FilePipeline())
+        ```
 
 - #### 爬虫的配置 启动和终止
 
