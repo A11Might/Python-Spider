@@ -15,6 +15,9 @@
     - [使用Pipeline保存结果](#使用Pipeline保存结果)
     - [爬虫的配置, 启动和终止](#爬虫的配置-启动和终止)
     - [Scheduler组件](#Scheduler组件)
+    - [使用代理](#使用代理)
+- [定时任务](#定时任务)
+- [网页去重](#网页去重)
 - [slf4j配置](#slf4j)
 
 
@@ -36,10 +39,12 @@ try {
 
     // 解析响应
     if (response.getStatusLine().getStatusCode() == 200) {
-        String content = EntityUtils.toString(response.getEntity(), "utf8"); // 解析html
+        // 解析html
+        String content = EntityUtils.toString(response.getEntity(), "utf8"); 
+
+        // 下载图片
         OutputStream os = new FileOutputStream(new File("c:\\path"));
-        response.getEntity().writeTo(os); // 下载图片
-        System.out.println(content.length());
+        response.getEntity().writeTo(os); 
     }
 
 } catch (IOException e) {
@@ -66,17 +71,17 @@ try {
 
         ```java
         // 创建HttpGet对象, 设置url访问地址
-        HttpGet httpGet = new HttpGet("http://www.itcast.cn");
+        HttpGet httpGet = new HttpGet("http://rs.xidian.edu.cn/portal.php");
         ```
 
     - 带参数的get请求
 
         ```java
-        // 设置请求地址是: http://yun.itheima.com/search?keys=Java
-        // 1. 创建URLBuilder
-        URIBuilder uriBuilder = uriBuilder = new URIBuilder("http://yun.itheima.com/search");
+        // 设置请求地址是: http://rs.xidian.edu.cn/portal.php/search?keys=Java
+        // 1. 创建URIBuilder
+        URIBuilder uriBuilder = uriBuilder = new URIBuilder("http://rs.xidian.edu.cn/portal.php/search");
         // 2. 设置参数
-        uriBuilder.setParameter("keys", "Java"); // 支持链式调用
+        uriBuilder.setParameter("keys", "Java"); // 支持链式调用, 设置多个参数
 
         // 创建HttpGet对象, 设置url访问地址
         HttpGet httpGet = new HttpGet(uriBuilder.build());
@@ -88,16 +93,16 @@ try {
 
         ```java
         // 创建HttpPost对象, 设置url访问地址
-        HttpPost httpPost = new HttpPost("http://www.itcast.cn");
+        HttpPost httpPost = new HttpPost("http://rs.xidian.edu.cn/portal.php");
         ```
 
     - 带参数的post请求
 
-        url地址(http://yun.itheima.com/search)中没有参数, 参数keys=java放到表单中进行提交
+        url地址(http://rs.xidian.edu.cn/portal.php/search)中没有参数, 参数keys=java放到表单中进行提交
 
         ```java
         // 创建HttpPost对象, 设置url访问地址
-        HttpPost httpPost = new HttpPost("http://yun.itheima.com/search");
+        HttpPost httpPost = new HttpPost("http://rs.xidian.edu.cn/portal.php/search");
 
         // 1. 声明List集合, 封装表单中的参数
         List<NameValuePair> params = new ArrayList<>();
@@ -112,17 +117,17 @@ try {
 
 - #### 连接池
 
-    每次请求都要求创建HttpClient, 会有频繁创建和销毁的问题, 可以使用连接池来解决这个问题, 使用时从连接池中取出, 用完在放回去, 提高性能
+    需要使用HttpClient时从连接池中取, 用完不用关闭(由连接池统一管理)
 
     ```java
     public static void main(String[] args) {
         // 创建连接池管理器
         PoolingHttpClientConnectionManager cm = new PoolingHttpClientConnectionManager();
 
-        // 设置连接数
+        // 设置连接数(100个HttpClient)
         cm.setMaxTotal(100);
 
-        // 设置每个主机的最大连接数(不同网站)
+        // 设置每个主机的最大连接数(每个网站分10个HttpClient)
         cm.setDefaultMaxPerRoute(10);
 
         // 使用连接池管理器发起请求
@@ -139,7 +144,7 @@ try {
 
 - #### 请求参数
 
-    由于网络或者目标服务器的原因, 请求需要教长时间才能完成, 我们需要自定义相关时间
+    由于网络或者目标服务器的原因, 请求需要较长时间才能完成, 可以自定义相关时间
 
     ```java
     // 配置请求信息
@@ -154,7 +159,7 @@ try {
 
 ## Jsoup
 
-HTML解析器, 可直接解析某个URL地址, HTML文本内容
+HTML解析器, 可直接解析某个URL地址, HTML文本或者字符串
 
 - #### 从一个URL 文件或者字符串中解析HTML
 
@@ -162,14 +167,14 @@ HTML解析器, 可直接解析某个URL地址, HTML文本内容
 
         ```java
         // 解析url地址, 第一个参数是访问的url, 第二个参数是访问时候的超时时间
-        Document document = Jsoup.parse(new URL("http://www.itcast.cn"), 1000);
+        Document document = Jsoup.parse(new URL("http://rs.xidian.edu.cn/portal.php"), 1000);
         ```
 
     - 从字符串中解析HTML
 
         ```java
-        // 使用工具类读取文件, 获取字符串(common-io)
-        String content = FileUtils.readFileToString(new File("path"), "utf8");
+        // 使用工具类读取文件, 获取字符串(commons-io)
+        String content = FileUtils.readFileToString(new File("c:\\path"), "utf8");
 
         // 解析字符串
         Document document = Jsoup.parse(content);
@@ -178,8 +183,8 @@ HTML解析器, 可直接解析某个URL地址, HTML文本内容
     - 从文件中解析HTML
 
         ```java
-        // 解析文件 "c:\\users\\tree\\"
-        Document document = Jsoup.parse(new File("path"), "utf8");
+        // 解析文件 "c:\\path\\text.html"
+        Document document = Jsoup.parse(new File("c:\\path"), "utf8");
         ```
 
 - #### 使用DOM或者CSS选择器来查找 取出数据
@@ -194,7 +199,7 @@ HTML解析器, 可直接解析某个URL地址, HTML文本内容
             // 根据标签查询元素
             element = document.getElementsByTag("tag").first();
             // 根据class查询元素
-            element = document.getElementsByClass("classValues").first(); // 可以包含一个classValue也可以包含多个
+            element = document.getElementsByClass("classValues").first(); // 可以包含一个或多个classValue
             // 根据属性获取元素
             element = document.getElementsByAttribute("attributeKey").first();
             element = document.getElementsByAttributeValue("attributeKey", "attributeValue").first();
@@ -247,6 +252,9 @@ HTML解析器, 可直接解析某个URL地址, HTML文本内容
         Attributes attributes = element.attributes(); // attributes.toString()
         // 从元素中获取文本内容text
         str = element.text();
+        // 从多个元素中获取第index个元素的内容
+        str = elements.first().text();
+        str = elements.get(index).text();
         ```
 
 ## WebMagic
@@ -259,8 +267,8 @@ public class JobProcessor implements PageProcessor {
     // 解析页面
     public void process(Page page) {
         // 得到page解析的地址
-        page.getUrl()
-        // 获取链接
+        page.getUrl();
+        // 添加待解析的链接到队列中
         page.addTargetRequests(page.getHtml().links()
                 // 所有符合https://www.jd.com/news.\\w+?.*正则表达式的url地址
                 .regex("(https://www.jd.com/news.\\w+?.*)").all());
@@ -294,9 +302,9 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
 
 - #### 抽取元素API
 
-    抽取API返回的都是一个Selectable接口, 支持链式调用的. 该接口实现Selectable.nodes()用于获取包含所有抽取的Selectable元素的列表, 可以使用get()方法选取第几个Selectable元素
+    抽取元素API返回的都是一个Selectable接口, 支持链式调用的. 该接口实现 `Selectable.nodes()` 用于获取包含所有抽取的Selectable元素的列表, 可以使用 `get(index)` 方法选取第index个Selectable元素
 
-     - XPath
+    - XPath
 
         ```java
         // 获取属性class=mt的div标签里面的h1标签的内容
@@ -308,7 +316,7 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
         ```java
         // div.mt>h1表示class为mt的div标签下的直接子元素h1标签中的内容
         // 不同于Jsoup的.select("div.mt>h1").text()方法取所有标签中的内容, .css("div.mt>h1", "text")只取最中间标签中的内容
-        page.getHtml().css("div.mt>h1", "text").toString(); // (css选择器, 需要获取属性的属性名)
+        page.getHtml().css("div.mt>h1", "text").toString(); // css(css选择器, 需要获取属性的属性名)
         ```
 
     - 正则表达式
@@ -322,7 +330,7 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
         |xpath(String xpath)|使用XPath选择|html.xpath("//div[@class='title']")|
         |$(String selector)|使用Css选择器选择|html.$("div.title")|
         |$(String selector,String attr)|使用Css选择器选择|html.$("div.title","text")|
-        |css(String selector)|功能同$()，使用Css选择器选择|html.css("div.title")|
+        |css(String selector)|功能同$(), 使用Css选择器选择|html.css("div.title")|
         |links()|选择所有链接|html.links()|
         |regex(String regex)|使用正则表达式抽取|html.regex("\(.\*?)\")|
 
@@ -334,8 +342,8 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
 
     |方法|说明|示例|
     |---|---|---|
-    |get()|返回一条String类型的结果(第一条)|String link= html.links().get()|
-    |toString()|同get()，返回一条String类型的结果(第一条)|String link= html.links().toString()|
+    |get()|返回一条String类型的结果(返回第一条)|String link= html.links().get()|
+    |toString()|同get(), 返回一条String类型的结果(返回第一条)|String link= html.links().toString()|
     |all()|返回所有抽取结果|List links= html.links().all()|
 
 - #### 获取链接
@@ -376,13 +384,13 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
         }
         ```
 
-    - 也可以自己实现Pipeline接口m, 自定义输出方式, Pipeline的接口定义如下: 
+    - 也可以自己实现Pipeline接口, 自定义输出方式, Pipeline的接口定义如下: 
 
         ```java
         public interface Pipeline {
-            // ResultItems保存了抽取结果，它是一个Map结构，
-            // 在page.putField(key,value)中保存的数据，
-            //可以通过ResultItems.get(key)获取
+            // ResultItems保存了抽取结果, 它是一个Map结构
+            // 在page.putField(key,value)中保存的数据
+            // 可以通过ResultItems.get(key)获取
             public void process(ResultItems resultItems, Task task);
         }
         ```
@@ -397,21 +405,21 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
 
     - Spider
 
-        使用一个PageProcessor创建Spider对象, 后使用run()启动爬虫, 同时可以通过set方法对Spider的其他组件(Downloader, Scheduler, Pipeline)进行设置
+        使用一个PageProcessor实现类创建Spider对象, 后使用run()启动爬虫, 同时可以通过set方法对Spider的其他组件(Downloader, Scheduler, Pipeline)进行设置
 
         |方法|说明|示例|
         |---|---|---|
         |create(PageProcessor)|创建Spider|Spider.create(new GithubRepoProcessor())|
         |addUrl(String…)|添加初始的URL|spider.addUrl("http://webmagic.io/docs/")|
         |thread(n)|开启n个线程|spider.thread(5)|
-        |run()|启动，会阻塞当前线程执行|spider.run()|
-        |start()/runAsync()|异步启动，当前线程继续执行|spider.start()|
+        |run()|启动, 会阻塞当前线程执行|spider.run()|
+        |start()/runAsync()|异步启动, 当前线程继续执行|spider.start()|
         |stop()|停止爬虫|spider.stop()|
-        |addPipeline(Pipeline)|添加一个Pipeline，一个Spider可以有多个Pipeline|spider.addPipeline(new ConsolePipeline())|
-        |setScheduler(Scheduler)|设置Scheduler，一个Spider只能有个一个Scheduler|spider.setScheduler(new RedisScheduler())|
-        |setDownloader(Downloader)|设置Downloader，一个Spider只能有个一个Downloader|spider.setDownloader(new SeleniumDownloader())|
-        |get(String)|同步调用，并直接取得结果|ResultItems result = spider.get("http://webmagic.io/docs/")|
-        |getAll(String…)|同步调用，并直接取得一堆结果|List<ResultItems> results = spider.getAll("http://webmagic.io/docs/", "http://webmagic.io/xxx")|                                 
+        |addPipeline(Pipeline)|添加一个Pipeline, 一个Spider可以有多个Pipeline|spider.addPipeline(new ConsolePipeline())|
+        |setScheduler(Scheduler)|设置Scheduler, 一个Spider只能有个一个Scheduler|spider.setScheduler(new RedisScheduler())|
+        |setDownloader(Downloader)|设置Downloader, 一个Spider只能有个一个Downloader|spider.setDownloader(new SeleniumDownloader())|
+        |get(String)|同步调用, 并直接取得结果|ResultItems result = spider.get("http://webmagic.io/docs/")|
+        |getAll(String...)|同步调用, 并直接取得一堆结果|List<ResultItems> results = spider.getAll("http://webmagic.io/docs/", "http://webmagic.io/xxx")|                                 
 
 
 
@@ -431,11 +439,11 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
         |---|---|---|
         |setCharset(String)|设置编码|site.setCharset("utf-8")|
         |setUserAgent(String)|设置UserAgent|site.setUserAgent("Spider")|
-        |setTimeOut(int)|设置超时时间，单位是毫秒|site.setTimeOut(3000)|
+        |setTimeOut(int)|设置超时时间, 单位是毫秒|site.setTimeOut(3000)|
         |setRetryTimes(int)|设置重试次数|site.setRetryTimes(3)|
         |setCycleRetryTimes(int)|设置循环重试次数|site.setCycleRetryTimes(3)|
         |addCookie(String,String)|添加一条cookie|site.addCookie("dotcomt_user","code4craft")|
-        |setDomain(String)|设置域名，需设置域名后，addCookie才可生效|site.setDomain("github.com")|
+        |setDomain(String)|设置域名, 需设置域名后, addCookie才可生效|site.setDomain("github.com")|
         |addHeader(String,String)|添加一条addHeader|site.addHeader("Referer","https://github.com")|
         |setHttpProxy(HttpHost)|设置Http代理|site.setHttpProxy(new HttpHost("127.0.0.1",8080))|
 
@@ -450,43 +458,116 @@ page.getHtml()返回的是一个Html对象, 它实现了Selectable接口. 这个
         |DuplicateRemovedScheduler|抽象基类, 提供一些模板方法|继承它可以实现自己的功能|
         |QueueScheduler|使用内存队列保存待抓取URL||
         |PriorityScheduler|使用带有优先级的内存队列保存待抓取URL|耗费内存较QueueScheduler更大, 但是当设置了request.priority之后, 只能使用PriorityScheduler才可使优先级生效|
-        |FileCacheQueueScheduler|使用文件保存抓取URL, 可以在关闭程序并下次启动时, 从之前抓取到的URL继续抓取|需指定路径，会建立.urls.txt和.cursor.txt两个文件|
+        |FileCacheQueueScheduler|使用文件保存抓取URL, 可以在关闭程序并下次启动时, 从之前抓取到的URL继续抓取|需指定路径, 会建立.urls.txt和.cursor.txt两个文件|
         |RedisScheduler|使用Redis保存抓取队列, 可进行多台机器同时合作抓取|需要安装并启动redis|
 
     - 对已抓取的URL进行去重
 
-        去重部分被单独抽象成了一个接口: DuplicateRemover. 如下为WebMagic提供两种去重方式: 
+        - 去重部分被单独抽象成了一个接口: DuplicateRemover. 如下为WebMagic提供的两种去重方式: 
 
-        |类|说明|
-        |---|---|
-        |HashSetDuplicateRemover|使用HashSet来进行去重，占用内存较大|
-        |BloomFilterDuplicateRemover|使用BloomFilter来进行去重，占用内存较小，但是可能漏抓页面|
+            |类|说明|
+            |---|---|
+            |HashSetDuplicateRemover|使用HashSet来进行去重, 占用内存较大|
+            |BloomFilterDuplicateRemover|使用BloomFilter来进行去重, 占用内存较小, 但是可能漏抓页面|
 
-        RedisScheduler是使用Redis的set进行去重, 其他的Scheduler默认都使用HashSetDuplicateRemover来进行去重
+            RedisScheduler是使用Redis的set进行去重, 其他的Scheduler默认都使用HashSetDuplicateRemover来进行去重
 
-        注: 如果要使用BloomFilter, 必须要加入以下依赖: 
-        ```xml
-        <!--WebMagic对布隆过滤器的支持-->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>16.0</version>
-        </dependency>
-        ```
+        - 如果要使用BloomFilter, 必须要加入以下依赖: 
 
-        修改代码，添加布隆过滤器
+            ```xml
+            <!--WebMagic对布隆过滤器的支持-->
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>16.0</version>
+            </dependency>
+            ```
+
+            修改代码, 添加布隆过滤器
+            ```java
+            public static void main(String[] args) {
+                Spider.create(new JobProcessor())
+                        //初始访问url地址
+                        .addUrl("https://www.jd.com/moreSubject.aspx")
+                        .addPipeline(new FilePipeline("D:/webmagic/"))
+                        .setScheduler(new QueueScheduler()
+                                .setDuplicateRemover(new BloomFilterDuplicateRemover(10000000))) //参数设置需要对多少条数据去重
+                        .thread(1)//设置线程数
+                        .run();
+            }
+            ```
+
+- #### 使用代理
+
+    WebMagic使用的代理API是ProxyProvider, 由HttpClientDownloader设置
+
+    |API|说明|
+    |---|---|
+    |HttpClientDownloader.setProxyProvider(ProxyProvider proxyProvider)|设置代理|
+
+    - ProxyProvider有一个默认实现: SimpleProxyProvider. 它是一个基于简单Round-Robin的, 没有失败检查的ProxyProvider
+
         ```java
-        public static void main(String[] args) {
-            Spider.create(new JobProcessor())
-                    //初始访问url地址
-                    .addUrl("https://www.jd.com/moreSubject.aspx")
-                    .addPipeline(new FilePipeline("D:/webmagic/"))
-                    .setScheduler(new QueueScheduler()
-                            .setDuplicateRemover(new BloomFilterDuplicateRemover(10000000))) //参数设置需要对多少条数据去重
-                    .thread(1)//设置线程数
+        @Scheduled(fixedDelay = 10000)
+        public void testProxy() {
+            // 创建下载器Downloader
+            HttpClientDownloader httpClientDownloader = new HttpClientDownloader();
+            // 给下载器设置代理服务器信息
+            httpClientDownloader.setProxyProvider(SimpleProxyProvider.from(new Proxy("39.137.77.68",80)));
+
+            Spider.create(new ProxyTest())
+                    .addUrl("http://ip.chinaz.com/getip.aspx")
+                    .setDownloader(httpClientDownloader) // 设置下载器
                     .run();
         }
         ```
+
+    - 如果需要根据实际使用情况对代理服务器进行管理(例如校验是否可用, 定期清理, 添加代理服务器等), 需要自己实现APIProxyProvider
+
+    - 可以访问网址http://ip.chinaz.com/getip.aspx 测试当前请求的ip
+
+## 定时任务
+
+Spring内置的Spring Task, 在引导类前加@EnableScheduling注解开启定时任务, 再在需要定时启动的方法前加@Scheduled注解启动定时任务, 其属性如下: 
+
+- cron: cron表达式, 指定任务在特定时间执行
+
+    - Cron表达式
+
+        cron的表达式是字符串, 由七个被空格分开的子表达式组成, 用于描述个别细节的时间表, 代表如下: 
+
+        1. Seconds: 有效值为数字[0, 59]
+        2. Minutes: 有效值为数字[0, 59]
+        3. Hours: 有效值数字[0, 23]
+        4. Day-of-Month: 有效值数字[1, 31], 需要注意个别月份
+        5. Month: 有效值数字[0, 11]或者字符串: JAN, FEB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC 
+        6. Day-of-Week: 有效值数字[1, 7](其中1代表星期日)或者字符串: SUN, MON, TUE, WED, THU, FRI, SAT
+        7. Year(可选字段)
+
+        "/": 为特别单位, 表示为"每"如"0/15"表示每隔15分钟执行一次, "0"表示为从"0"分开始, "3/20"表示表示每隔20分钟执行一次, "3"表示从第3分钟开始执行
+        "?": 表示每月的某一天, 或第周的某一天
+        "L": 用于每月, 或每周, 表示为每月的最后一天, 或每个月的最后星期几如"6L"表示"每月的最后一个星期五"
+        
+        例: `0 0 12 ? * WED` 在每星期三下午12:00 执行, "*"代表整个时间段
+
+- `fixedDelay` : 上一次任务执行完后多久再执行, 参数类型为long, 单位ms
+
+- fixedDelayString: 与fixedDelay含义一样, 只是参数类型变为String
+
+- fixedRate: 按一定的频率执行任务, 参数类型为long, 单位ms
+
+- fixedRateString: 与fixedRate的含义一样, 只是将参数类型变为String
+
+- `initialDelay` : 延迟多久再第一次执行任务, 参数类型为long, 单位ms
+
+- initialDelayString: 与initialDelay的含义一样, 只是将参数类型变为String
+
+- zone: 时区, 默认为当前时区, 一般没有用到
+
+## 网页去重
+
+不光url需要去重, 下载的内容也需要去重, 使用[simhash工程](https://github.com/CreekLou/simhash.git)
+
 
 ## slf4j
 
