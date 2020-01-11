@@ -10,7 +10,7 @@
 - [Spring整合Elasticsearch](#Spring整合Elasticsearch)
     - [引入依赖](#引入依赖)
     - [配置Elasticsearch](#配置Elasticsearch)
-    - [与redis冲突(netty)](#与redis冲突(netty))
+    - [与redis冲突](#与redis冲突)
     - [Spring Data Elasticsearch](#Spring-Data-Elasticsearch)
 
 ## Elasticsearch
@@ -106,7 +106,7 @@
 
             使用GET请求, 访问localhost:9200/test/_search?q=title:keyword
 
-            使用GET请求, 访问localhost:9200/test/_searchq=content:keyword
+            使用GET请求, 访问localhost:9200/test/_search?q=content:keyword
 
         3. 复杂搜索条件
 
@@ -138,7 +138,7 @@
     spring.data.elasticsearch.cluster-name=nowcoder
     spring.data.elasticsearch.cluster-nodes=127.0.0.1:9300
     ```
-- #### 与redis冲突(netty)
+- #### 与redis冲突
 
     在引导类application.class中添加
 
@@ -223,7 +223,7 @@
                 SearchQuery searchQuery = new NativeSearchQueryBuilder()
                     .withQuery(QueryBuilders.multiMatchQuery(keyword, "title", "content"))
                     .withSort(SortBuilders.fieldSort("userId").order(SortOrder.DESC))
-                    .withPageable(PageRequest.of(current, limit)) // (当前页数, 每页数据数)
+                    .withPageable(PageRequest.of(current, limit)) // (当前页数, 每页数据数), 页数从零开始很重要兄弟
                     .withHighlightFields(
                             new HighlightBuilder.Field("title").preTags("<em>").postTags("</em>"),
                             new HighlightBuilder.Field("content").preTags("<em>").postTags("</em>")
