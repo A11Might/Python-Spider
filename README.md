@@ -1,17 +1,17 @@
 # Java
 
-- [极客时间](geekTime/geektime.md)
+- [极客时间](code/geekTime/geektime.md)
 
-- [2018左神初级](learningCode/particecode.md)
+- [2018左神初级](code/learningCode/particecode.md)
 
-- [2018左神高级](highClass/highclass.md)
+- [2018左神高级](code/highClass/highclass.md)
 
-- [acwing](acwing/acwing.md)
+- [acwing](code/acwing/acwing.md)
 
-- [通用算法](util/util.md)
+- [通用算法](code/util/util.md)
 
 # 爬虫
 
-- [Python](spider/spider.md)
+- [Python](code/spider/spider.md)
 
-- [Java](spider/javaspider.md)
+- [Java](code/spider/javaspider.md)
