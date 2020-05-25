@@ -6,8 +6,6 @@
 
 - [2018左神高级](code/highClass/highclass.md)
 
-- [acwing](code/acwing/acwing.md)
-
 - [通用算法](code/util/util.md)
 
 # 爬虫
